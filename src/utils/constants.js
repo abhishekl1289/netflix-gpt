@@ -8,3 +8,5 @@ export const API_OPTIONS= {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMTM3NTEyYmUxMGFiNDExZGI1YzUwYjQwZDE2MjE1NiIsInN1YiI6IjY1MGVkMTY4NmY1M2UxMGFhNGM5MmVkMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.CeQf3Np2Myh0-DaZJlTucF5XgB-NW_-WafqyTkko_1Y'
     }
   };
+  export const IMG_CDN_URL="https://image.tmdb.org/t/p/w500"
+  export const SUPPORTED_LANGUAGES=[{identifier:"en",name:"English"},{identifier:"hindi",name:"Hindi"}]
