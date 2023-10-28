@@ -2,11 +2,11 @@ import React from "react";
 
 const VideoTitle = ({ title, overview }) => {
   return (
-    <div className="pt-[13%] px-12 absolute text-white bg-gradient-to-r from-black w-screen aspect-video">
-      <h1 className="font-bold text-6xl">{title}</h1>
-      <p className="py-6 text-lg w-4/12">{overview}</p>
-      <div className="flex gap-2">
-        <button className="bg-white text-black px-5 py-2 flex gap-1 rounded-md font-semibold hover:bg-opacity-70">
+    <div className="pt-[13%] px-6 md:px-12 absolute text-white bg-gradient-to-r from-black w-screen aspect-video">
+      <h1 className="font-bold text-2xl md:text-6xl">{title}</h1>
+      <p className="hidden md:inline-block py-6 text-lg w-4/12">{overview}</p>
+      <div className="flex gap-2 my-3 md:m-0">
+        <button className="bg-white text-black px-2 md:px-5 py-1 md:py-2 flex gap-1 rounded-md font-semibold hover:bg-opacity-70">
           {" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +22,7 @@ const VideoTitle = ({ title, overview }) => {
           </svg>
           Play
         </button>
-        <button className="bg-gray-600 text-white px-4 py-2 flex gap-1 rounded-md hover:bg-opacity-70">
+        <button className=" bg-gray-600 text-white px-2 md:px-4 py-1 md:py-2 flex gap-1 rounded-md hover:bg-opacity-70">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

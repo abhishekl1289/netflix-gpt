@@ -50,20 +50,20 @@ const Header = () => {
     dispatch(changeLanguage(e.target.value))
   }
   return (
-    <div className="absolute w-full px-8 py-2 z-10 flex justify-between ">
+    <div className="absolute w-full px-8 py-2 z-10 flex flex-col md:flex-row justify-between ">
       <img
-        className="w-44"
+        className="w-44 mx-auto md:mx-0"
         src={LOGO}
         alt="logo"
       />
       {user && (
-        <div className="flex gap-2 h-4 items-center mt-4">
+        <div className="flex gap-2 h-4 justify-between items-center mt-4">
           {showGptSearch && (<select className="p-2 bg-gray-900 text-white" onChange={handleLanguageChange}>
             {SUPPORTED_LANGUAGES.map(lang=><option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
           </select>)}
-          <button className="bg-purple-800 text-white px-4 py-2 rounded-md" onClick={handleGptSearchClick}>{showGptSearch?"Homepage":"GPT Search"}</button>
+          <button className="bg-purple-800 text-white px-2 md:px-4 py-1 md:py-2 rounded-md" onClick={handleGptSearchClick}>{showGptSearch?"Homepage":"GPT Search"}</button>
           <img
-            className="w-10 h-10 object-cover"
+            className="w-10 h-10 object-cover hidden md:block"
             alt="user-icon"
             src={user?.photoURL}
           />
